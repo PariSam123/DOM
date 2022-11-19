@@ -19,6 +19,5 @@ headerTitle.style.borderBottom = 'solid 2px black';
 let items = document.getElementsByClassName('list-group-item');
 for(let i=0;i<items.length;i++){
     items[i].style.fontWeight = "bold";
-    items[i].style.color = "green";
-    items[i].style.backgroundColor = "lightgrey"
 }
+items[2].style.backgroundColor = "green"
