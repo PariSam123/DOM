@@ -1,0 +1,1 @@
+Difference between innerText and textContent is innerText pays attention to the styling and won't return the text of "hidden" elements.
