@@ -16,8 +16,19 @@ let headerTitle = document.getElementById('header-title');
 // headerTitle.textContent = 'Hello';
 // headerTitle.innerText = 'Good Morning';
 headerTitle.style.borderBottom = 'solid 2px black';
-let items = document.getElementsByClassName('list-group-item');
+
+//Get element bt class name
+// let items = document.getElementsByClassName('list-group-item');
+// for(let i=0;i<items.length;i++){
+//     items[i].style.fontWeight = "bold";
+//     items[i].style.backgroundColor = "green"
+// }
+ 
+
+//Get element bt tag name
+let items = document.getElementsByTagName('li');
 for(let i=0;i<items.length;i++){
     items[i].style.fontWeight = "bold";
+    items[i].style.backgroundColor = "yellow"
 }
-items[2].style.backgroundColor = "green"
+
