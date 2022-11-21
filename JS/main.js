@@ -1,23 +1,59 @@
-document.title = "DOM Project";
-let headerTitle = document.getElementById('header-title');
-headerTitle.style.borderBottom = 'solid 2px black';
-//Query selector
-// let secondItem = document.querySelector('.list-group-item:nth-child(2)');
-// secondItem.style.backgroundColor = "green";
+//Traversing the DOM
+let itemList = document.querySelector('#items');
+//Parent Element
+/* console.log(itemList.parentElement);
+itemList.parentElement.style.backgroundColor = 'grey';
+console.log(itemList.parentElement.parentElement.parentElement); */
 
-// let thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-// thirdItem.style.visibility = "hidden";
+//last Element child
+/*console.log(itemList.lastElementChild);
+itemList.lastElementChild.style.backgroundColor = "yellow";*/
+
+//last child
+// console.log(itemList.lastChild);
+
+//first Element child
+/*console.log(itemList.firstElementChild);
+itemList.firstElementChild.style.backgroundColor = "teal";*/
+
+//first child
+// console.log(itemList.firstChild);
+
+//next sibling
+//console.log(itemList.nextSibling);
+
+//next element sibling 
+//console.log(itemList.nextElementSibling);
+//itemList.nextElementSibling.style.backgroundColor = "pink";
+
+//previous Sibling
+//console.log(itemList.previousSibling);
+
+//previous Element Sibling
+//console.log(itemList.previousElementSibling);
+//itemList.previousElementSibling.style.backgroundColor = "red";
+
+//Create Element
+let newDiv = document.createElement('div');
+newDiv.className = 'hello';
+newDiv.id = "hello1";
+
+//Set Attribute
+newDiv.setAttribute('title','Hello Div');
+
+//Create text node
+let newDivText = document.createTextNode('Hello World');
+
+//append Child
+newDiv.appendChild(newDivText);
+
+var container = document.querySelector('header .container');
+var h1 = document.querySelector('header h1');
+
+container.insertBefore(newDiv,h1);
 
 
-//Query selector All
-// let items = document.querySelectorAll('li');
-// for(let i=0;i<items.length;i++){
-//     items[1].style.backgroundColor = 'green';   
-// }
-let odd = document.querySelectorAll('li:nth-child(odd)');
-let even = document.querySelectorAll('li:nth-child(even)');
-for(let i=0;i<odd.length;i++){
-    odd[i].style.backgroundColor = 'lightgrey';
-    even[i].style.backgroundColor = 'grey';
+// var container1 = document.querySelector('ul .container1');
+// var li = document.querySelector('ul li');
 
-}
+// container1.insertBefore(newDiv,li);
